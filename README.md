@@ -6,7 +6,8 @@ Provides access to a min heap data structure (priority queue)
 
 ## Maintains: 
   a Set S with associated numerical a(s) integers for each s in S
-            a(s) can be consider the "priority" of element s
+  
+  a(s) can be consider the "priority" of element s
                                     
                                           
 ## Updates/Queries:                                     
