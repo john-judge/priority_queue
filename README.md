@@ -19,5 +19,5 @@ Provides access to a min heap data structure (priority queue)
 ## Heap property:  
   The priority of a parent is "higher-priority" than those of its children:  
   
-  <a href="https://www.codecogs.com/eqnedit.php?latex=a_{parent}&space;<&space;min(a_{left},a_{right})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{parent}&space;<&space;min(a_{left},a_{right})" title="a_{parent} < min(a_{left},a_{right})" /></a>
+  <a href="https://www.codecogs.com/eqnedit.php?latex=a_{parent}&space;\leq&space;min(a_{left},a_{right})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{parent}&space;<&space;min(a_{left},a_{right})" title="a_{parent} < min(a_{left},a_{right})" /></a>
 This necessitates the bubble_up, bubble_down maintenance
