@@ -1,5 +1,5 @@
 # Priority Queue
-A priority_queue (min heap) data structure library implemented in C.
+A simple priority_queue (min heap) data structure library implemented in C.
 
 I built this simple data structure implementation to use in later projects as part of C static libraries.
 Provides access to a min heap data structure (priority queue)
@@ -10,11 +10,14 @@ Provides access to a min heap data structure (priority queue)
                                     
                                           
 ## Updates/Queries:                                     
-    -    remove(s)                                    
-    -    add(s)                                          
-    -    change_value(s,a')                       
-    -    extract_min()                           
-   the first 3 ops require bubble-up/down  
+    -    remove(s)              // O(log n)           
+    -    add(s)                 // O(log n)                
+    -    change_value(s,a')     // O(log n)           
+    -    extract_min()          // O(1)                     
+   (the first 3 operations require bubble-up/down)
                                     
 ## Heap property:  
-  The priority of a parent is "higher-priority" than those of its children:  a_p < min(a_c1,a_c2)
+  The priority of a parent is "higher-priority" than those of its children:  
+  
+  <a href="https://www.codecogs.com/eqnedit.php?latex=a_{parent}&space;<&space;min(a_{left},a_{right})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{parent}&space;<&space;min(a_{left},a_{right})" title="a_{parent} < min(a_{left},a_{right})" /></a>
+This necessitates the bubble_up, bubble_down maintenance
