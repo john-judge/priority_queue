@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "priority_queue.c"
+#include "lib/priority_queue.c"
 
 /* Tests for priority queue implementation */
 
