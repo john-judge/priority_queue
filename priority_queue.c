@@ -212,11 +212,10 @@ void update_priority(min_heap_t* h, int index, int priority) {
     }
 }
 
-void* extract_min(min_heap_t* h) {
+element_t* extract_min(min_heap_t* h) {
     // return the DATA of the top element, and remove it
     element_t* top = h->elements[0];
-    void* payload = top->data;
-    
+    element_t* cp = element_new(top->index,top->data,top->priority); //deep copy
     remove_element(h,top->index);
-    return payload;
+    return cp;
 }

@@ -39,8 +39,9 @@ int main() {
     printf("\nExtracting elements in order of priority\n");
     for (int i = 0; i<n;i++) {
         
-        void* data = extract_min(h);
-        printf("extracted data %d at priority %d\n",(int)data,i);
+        element_t* top = extract_min(h);
+        printf("extracted data %d at priority %d\n",(int)top->data,i);
+	free(top);
     }
     min_heap_free(h);
 }

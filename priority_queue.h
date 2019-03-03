@@ -45,4 +45,4 @@ element_t* add_element(min_heap_t* h, void* data, int priority);
 
 void update_priority(min_heap_t* h, int index, int priority);
 
-void* extract_min(min_heap_t* h);
+element_t* extract_min(min_heap_t* h);
