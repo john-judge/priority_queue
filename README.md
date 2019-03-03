@@ -1,5 +1,5 @@
 # Priority Queue
-Provides access to a simple priority_queue (min heap) data structure library implemented in C.
+Provides access to a simple priority_queue (minimum heap) data structure library implemented in C.
 
 ## Maintains: 
   a Set S with associated numerical a(s) integers for each s in S
